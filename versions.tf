@@ -1,7 +1,7 @@
 #
 # Requirements for the resource's tags management module.
 #
-# Copyright 2016-2019, Frederico Martins
+# Copyright 2016-2020, Frederico Martins
 #   Author: Frederico Martins <http://github.com/fscm>
 #
 # SPDX-License-Identifier: MIT
@@ -16,5 +16,5 @@
 # uuidv5 -> 0.12.2
 #
 terraform {
-  required_version = ">= 0.12.2"
+  required_version = ">= 0.12.19"
 }
