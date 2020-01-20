@@ -9,7 +9,7 @@ local computer.
 
 ### Terraform
 
-Terraform version >= 0.12.2 is required.
+Terraform version >= 0.12.19 is required.
 
 Terraform installation instructions can be found
 [here](https://www.terraform.io/intro/getting-started/install.html).
@@ -30,8 +30,6 @@ AWS Command Line Interface installation instructions can be found
 - `tags` - **[type: map(string)]** Map of tags (e.g.: '{name=test,environment=dev}'). *[default value: {}]*
 
 ## Usage
-
-Example with custom defined subnets:
 
 ```hcl
 module "my_aws_tags" {
