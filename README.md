@@ -33,13 +33,19 @@ AWS Command Line Interface installation instructions can be found
 
 ```hcl
 module "my_aws_tags" {
-  environment   = "github.com/fscm/terraform-module-aws-tags"
+  source        = "github.com/fscm/terraform-module-aws-tags"
+  environment   = "prod"
   delimiter     = "-"
   id_tags_order = ["namespace", "name", "environment", "stage"]
   name          = "default"
   namespace     = ""
   stage         = ""
   tags          = {}
+}
+
+resource "aws_vpc" "my_aws_vpc" {
+  cidr_block = "10.0.0.0/16"
+  tags       = module.my_aws_tags.tags
 }
 ```
 
